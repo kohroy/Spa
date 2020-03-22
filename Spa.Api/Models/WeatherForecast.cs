@@ -1,6 +1,6 @@
 using System;
 
-namespace Spa.Web
+namespace Spa.Api.Models
 {
     public class WeatherForecast
     {
