@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-counter-component',
@@ -6,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class CounterComponent {
   public currentCount = 0;
+
+  constructor(title: Title) {
+    title.setTitle("计数");
+  }
 
   public incrementCounter() {
     this.currentCount++;
